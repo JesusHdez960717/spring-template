@@ -39,10 +39,10 @@ dependencies {
     //clean-architecture
     implementation 'dev.root101.clean:clean-core:4.7.1.SNAPSHOT.20230402'
 
-    //OpenApi docs
-    implementation 'org.springdoc:springdoc-openapi-ui:1.7.0'
-
     //flyway
     implementation 'org.flywaydb:flyway-mysql:9.16.1'
+
+    //OpenApi docs: https://springdoc.org/v2/
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
 
 }
