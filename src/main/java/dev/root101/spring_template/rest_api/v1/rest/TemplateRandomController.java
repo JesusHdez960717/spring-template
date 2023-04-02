@@ -1,8 +1,8 @@
-package dev.root101.spring_template.template.rest;
+package dev.root101.spring_template.rest_api.v1.rest;
 
 import dev.root101.clean.core.rest.ApiResponse;
+import dev.root101.spring_template.rest_api.v1.model.random.*;
 import dev.root101.spring_template.template.core.usecase.*;
-import dev.root101.spring_template.template.model.random.*;
 import io.swagger.v3.oas.annotations.*;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
