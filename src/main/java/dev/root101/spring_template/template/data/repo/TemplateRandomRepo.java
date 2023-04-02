@@ -21,11 +21,11 @@ public class TemplateRandomRepo extends DelegatedSpringJpaRepo<TemplateRandomDom
 
     public TemplateRandomDomain findByTemplateRandomId(int randomId) {
         TemplateRandom finded = repo().findByTemplateRandomId(randomId);
-        return finded == null ? converter.toDomain(finded) : null;
+        return finded != null ? converter.toDomain(finded) : null;
     }
 
     public TemplateRandomDomain findByTemplateRandom(int randomValue) {
         TemplateRandom finded = repo().findByTemplateRandom(randomValue);
-        return finded == null ? converter.toDomain(finded) : null;
+        return finded != null ? converter.toDomain(finded) : null;
     }
 }

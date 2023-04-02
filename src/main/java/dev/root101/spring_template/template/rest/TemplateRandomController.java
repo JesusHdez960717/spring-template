@@ -1,7 +1,6 @@
 package dev.root101.spring_template.template.rest;
 
 import dev.root101.clean.core.rest.ApiResponse;
-import dev.root101.clean.core.utils.validation.ValidationService;
 import dev.root101.spring_template.template.core.usecase.*;
 import dev.root101.spring_template.template.model.random.*;
 import io.swagger.v3.oas.annotations.*;

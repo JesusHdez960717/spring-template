@@ -20,9 +20,9 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class GlobalDefaultExceptionHandler extends ResponseEntityExceptionHandler {
 
     //------------------- Error logger UC -------------------\\
-
     private void logException(Exception exc, HttpStatus status) {
     }
+
     //---------------------- END ----------------------\\
     /**
      * <pre>
@@ -125,7 +125,7 @@ public class GlobalDefaultExceptionHandler extends ResponseEntityExceptionHandle
             HttpClientErrorException ex,
             WebRequest request
     ) throws Exception {
-        HttpStatus status = HttpStatus.valueOf(ex.getRawStatusCode());
+        HttpStatus status = HttpStatus.valueOf(ex.getStatusCode().value());
 
         logException(ex, status);
 
